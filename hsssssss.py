@@ -1,4 +1,5 @@
 #고용 코드입니다.
+#현서 담당
 import time
 def say(stentence): 
     for i in stentence :
