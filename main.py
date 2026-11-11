@@ -2,6 +2,7 @@
 #선생님 담당
 import hsssssss as h
 import easter_island as e
+import buy as b
 
 h.say('안녕#하냐 이1곳은 7 일레븐 ["이스터 섬 지부..."]')
 
@@ -15,7 +16,8 @@ answer = input("번호를 입력해주세요 : ")
 while True:
     if answer == "1":
         h.say("물건 구매를 선택하셨습니다.")
-        break
+        b.buy()
+        exit()
     elif answer == "2":
         h.say("재고 입고를 선택하셨습니다.")
         break
@@ -27,7 +29,8 @@ while True:
         break
     elif answer == "5":  
         h.say("고용을 선택하셨습니다.")
-        break
+        h.employment()
+        exit()
     elif answer == "moai":
         e.moai()
         exit()
