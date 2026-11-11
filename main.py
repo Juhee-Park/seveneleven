@@ -43,3 +43,4 @@ while True:
         exit()
     else:
         h.say("잘못된 입력입니다. 프로그램을 종료합니다.")
+        break
