@@ -4,6 +4,7 @@ def say(stentence):
         print(i,end='')
         time.sleep(0.05)
     print()
-while True:
-    say('🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿')
-    say('담배피는 모아이 ===>🚬🗿')
+def moai():
+    while True:
+        say('🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿')
+        say('담배피는 모아이 ===>🚬🗿')

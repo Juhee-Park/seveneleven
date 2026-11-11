@@ -1,5 +1,6 @@
 #편의점 시스템 메인 파일
 import hsssssss as h
+import easter_island as e
 
 h.say("안녕하세요 이곳은 세븐 일레븐 이스터 섬 지부...")
 
@@ -26,5 +27,8 @@ while True:
     elif answer == "5":  
         h.say("고용을 선택하셨습니다.")
         break
+    elif answer == "moai":
+        e.moai()
+        exit()
     else:
         h.say("잘못된 입력입니다. 프로그램을 종료합니다.")
