@@ -1,3 +1,4 @@
+#현재 시간을 계산해주는 코드
 import time
 
 start_time = time.monotonic()
