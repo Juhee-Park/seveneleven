@@ -1,7 +1,7 @@
 import time
 def say(stentence): 
     for i in stentence :
-        print(i,end='')
+        print(i,end='', )
         time.sleep(0.05)
     print()
 def moai():

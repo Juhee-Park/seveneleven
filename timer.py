@@ -7,6 +7,4 @@ start_time = time.monotonic()
 def get_hour() -> str:
     elapsed_hours = int((time.monotonic() - start_time) // 180)
     hour = (9 + elapsed_hours) % 24
-    return f"{hour:02d}시"
-
-print(get_hour())  # 실행 직후: 09시
+    return hour
