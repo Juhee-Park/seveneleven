@@ -1,3 +1,4 @@
+
 #재고 입고 코드
 #선생님 담당
 import hsssssss as h
@@ -26,8 +27,8 @@ firtmeet = True
 }
 
 def stock_in():
-    h.say("재고 입고를 위해 시간을 체크합니다.")
-    h.say(f"현재 시간: {timer.get_hour()}")
+    h.say('\033[31재고5 입고5를 위해 ["시간"]을 체크r합니다.\033[0m')
+    h.say("\033[31현재 시간:\033[0m")
 if timer.get_hour() < 9 and timer.get_hour() >= 0:
     h.say("아직 재고 입고 시간이 아닙니다. 9~12시 사이에 입고가 가능합니다.")
 elif timer.get_hour() >= 9 and timer.get_hour() < 12:
@@ -36,6 +37,5 @@ elif timer.get_hour() >= 9 and timer.get_hour() < 12:
     print("=================================")
 
     h.say("오-이. 나다. 이 트럭의 정당한 주인이자 이 쎄븐 일래븐의 적합한 거래자. 어둠을 가르고 빛을 가르고 그림자도 가르고 강아지도 기르는 자 그 이름은 ")
-
 
 
