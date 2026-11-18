@@ -3,7 +3,11 @@
 #선생님 담당
 import hsssssss as h
 import timer
+import pygame
 
+pygame.init()
+jeosong = pygame.mixer.music
+jeosong.load("pokemon_battle.mp3")
 
 firtmeet = True
 #더 팔고싶은거 있으면 추가하기
@@ -21,7 +25,8 @@ firtmeet = True
     '호빵': 0,
     '치킨': 0,
     '피자': 0,
-    '푸딩' : 0
+    '푸딩' : 0,
+    '나폴리맛피아과자': 0
 
 
 }
@@ -36,6 +41,13 @@ elif timer.get_hour() >= 9 and timer.get_hour() < 12:
 
     print("=================================")
 
-    h.say("오-이. 나다. 이 트럭의 정당한 주인이자 이 쎄븐 일래븐의 적합한 거래자. 어둠을 가르고 빛을 가르고 그림자도 가르고 강아지도 기르는 자 그 이름은 ")
+    h.say("오-이. 나다. 이 트럭의 정당한 주인이자 이 쎄븐 일래븐의 적합한 거래자. 어둠을 가르고 빛을 가르고 그림자도 가르고 강아지도 기르는 자 그 이름은 1.누구세요??? 2. 재고 사기 3. 저번에 제대로 물건이 안왔다고 따지기")
+
+    answer_jeago = input("")
+    if answer_jeago == "1":
+        h.say("흥, 구매를 원하는가? 구매를 원한다면 나와 어둠의 게임을 해야한다. 카드 드로우!!!!!!!!!!!!!!")
+        jeosong.play(-1)
+
+
 
 
