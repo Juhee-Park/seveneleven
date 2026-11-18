@@ -1,7 +1,9 @@
 #면접 코드입니다.
 #현서 담당
 import hsssssss as h
+import main as m
 def horrors():
+    num = 0
     h.say('\033[31m면%접시1ㄹ에 5ㄴ 걸 환0하["요"]\033[0m')
     h.say('\033[31m["몇@가지1"]를 무러3보지2\033[0m')
     h.say('\033[31m1.\033[0m')
@@ -10,3 +12,19 @@ def horrors():
     if ask1 == '너를 디스하는 거다':
         h.say('\033[31m그 ["당당함"]2 맘에 드#는 군!1\033[0m]')
         h.say('+1')
+        num += 1
+    else:
+        h.say('\033[31m아니2.. 뭔가가 ["부족"]해!1\033[0m]')
+        h.say('+0')
+
+
+
+
+
+    if num == 3:
+        h.say('통과')
+    else:
+        h.say('실패')
+        h.say('힌트: 때로는 쫒겨나는게 좋을 수도 있다.')
+        m.main2()
+        exit()
